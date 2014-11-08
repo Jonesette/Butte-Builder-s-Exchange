@@ -1,9 +1,4 @@
 body {
-	/*background: url('images/highlands1.jpg') no-repeat center center fixed;
-	background-size: 100% 100%;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size:cover;*/
 	font-family: sans-serif;
 	font-size: 15px;
 }
@@ -65,7 +60,7 @@ body {
 
 .context {
 	z-index: -1;
-	padding: 20px;
+	padding: 0px 20px 20px 20px;
 }
 
 #background {
@@ -107,7 +102,6 @@ td {
  p {
  	padding-bottom: 8px;
  }
-
 
 #footer {
 	background-color: rgba(255, 255, 255, 1.0);
