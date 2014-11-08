@@ -63,37 +63,45 @@ body {
 	min-width: 550px;
 	}
 
-#context {
+.context {
 	z-index: -1;
 	padding: 20px;
 }
 
 #background {
 	min-width: 700px;
-	position: absolute;
+	position: fixed;
 	height: 100%;
 	width: 100%;
 	z-index: -2;
 	background: url('images/highlands2.jpg') no-repeat center center fixed;
 	background-size: cover;
-	opacity: 0.4;
+	opacity: 0.3;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size:cover;
 }
 
 td {
-	border: 3px solid navy;
+	font-size: 12px;
+	border: 2px solid navy;
 	text-align: center;
-	vertical-align: center;
+	vertical-align: middle;
 	padding: 5px;
-	min-width: 80px;
+	min-width: 55px;
 }
 
  h1 {
 	padding-top: 10px;
 	padding-bottom: 8px;
 	text-decoration: underline;
+ }
+
+ h2 {
+ 	padding-top: 12px;
+ 	text-align: center;
+ 	font-style: italic;
+ 	font-weight: bold;
  }
 
  p {
