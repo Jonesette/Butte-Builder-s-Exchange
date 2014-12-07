@@ -18,7 +18,7 @@ body {
 }
 
 
-.heading{
+.heading {
 	margin-top: 32px;
 }
 
@@ -53,6 +53,11 @@ body {
 	border-radius: 5px;
 }
 
+#BBE-button a {
+	text-decoration: none;
+	color: black;
+}
+
 #container {
 	margin: 0px 0px 30px 169px;
 	min-width: 550px;
@@ -75,6 +80,29 @@ body {
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size:cover;
+}
+
+#info {
+	display: none;
+}
+
+#Member {
+	display: none;
+}
+
+#Contact {
+	display: none;
+}
+
+#hover {
+	background-color: white;
+	text-decoration: none;
+	color: black;
+}
+
+a {
+	color: black;
+	text-decoration: none;
 }
 
 td {
