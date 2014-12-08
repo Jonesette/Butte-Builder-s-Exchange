@@ -10,7 +10,7 @@ body {
 }
 
 #logo {
-	text-align: center;
+	z-index: 1;
 	position: fixed;
 	margin-left: 0px;
 	width: 169px;
@@ -18,21 +18,60 @@ body {
 }
 
 
-.heading {
-	margin-top: 32px;
+#heading {
+	font-size: 1em;
+	padding-left: 169px;
+	margin-top: 15px;
 }
 
 #name {
+	width: 100%;
 	color: white;
-	text-align: center;
 	font-size: 32px;
+	text-align: center;
 	font-family: serif;
 	background-color: navy;
 	position: fixed;
-	margin-left: 169px;
-	margin-right: 0px;
-	width: 90%;
 	height: 96px;
+}
+
+#nav-trigger {
+	z-index: 1;
+	position: fixed;
+	margin-top: -42px;
+	margin-left: 176px;
+	display: none;
+	font-family: sans-serif;
+	font-size: 15px;
+	font-weight: bold;
+	background-color: lightsteelblue;
+	color: black;
+	padding: 6px;
+	border-radius: 5px;
+
+}
+
+#nav-trigger:hover {
+	background-color: white;
+}
+
+#nav-mobile {
+	display: none;
+	text-align: center;
+	background-color: navy;
+	position: fixed;
+	margin: 0px 75% 30px 0px;
+	width: 169px;
+	height: 100%;
+	overflow: scroll;
+}
+
+#nav-mobile ul {
+	padding-bottom: 150px;
+}
+
+#nav-mobile li:hover {
+	background-color: white;
 }
 
 #menubar {
@@ -41,11 +80,17 @@ body {
 	position: fixed;
 	margin: 0px 75% 30px 0px;
 	width: 169px;
-	color: #e0e0e0;
 	height: 100%;
+	overflow: scroll;
+}
+
+#menubar ul {
+	padding-bottom: 150px;
 }
 
 .menu {
+	font-family: sans-serif;
+	font-size: 15px;
 	background-color: lightsteelblue;
 	color: black;
 	padding: 5px;
@@ -53,14 +98,16 @@ body {
 	border-radius: 5px;
 }
 
-#BBE-button a {
-	text-decoration: none;
-	color: black;
+.menu:hover {
+	background-color: white;
+}
+
+.expanded {
+	display: block;
 }
 
 #container {
 	margin: 0px 0px 30px 169px;
-	min-width: 550px;
 	}
 
 .context {
@@ -69,7 +116,6 @@ body {
 }
 
 #background {
-	min-width: 700px;
 	position: fixed;
 	height: 100%;
 	width: 100%;
@@ -94,12 +140,6 @@ body {
 	display: none;
 }
 
-#hover {
-	background-color: white;
-	text-decoration: none;
-	color: black;
-}
-
 a {
 	color: black;
 	text-decoration: none;
@@ -114,6 +154,10 @@ td {
 	min-width: 55px;
 }
 
+ p {
+ 	padding-bottom: 8px;
+ }
+
  h1 {
 	padding-top: 10px;
 	padding-bottom: 8px;
@@ -127,11 +171,31 @@ td {
  	font-weight: bold;
  }
 
- p {
- 	padding-bottom: 8px;
+ form {
+ 	padding-top: 24px;
+ }
+
+ .form-field {
+ 	padding-bottom: 12px;
+ }
+
+ input {
+ 	margin-left: 12px;
+ 	border-radius: 8px;
+ 	font-size: 15px;
+ }
+
+ form p {
+ 	float: left;
+ }
+
+ .message {
+	margin-left: 12px;
+	border-radius: 4px;
  }
 
 #footer {
+	z-index: 1;
 	background-color: rgba(255, 255, 255, 1.0);
 	position: fixed;
 	bottom: 0px;
@@ -143,5 +207,26 @@ td {
 }
 
 #footer p {
-	padding-top: 9px;
+	margin-top: 8px;
+}
+
+/* =Media Queries
+-------------------------------------------------------------- */
+@media all and (max-width: 650px){
+	 #nav-trigger {
+	 	display: block;
+	}
+
+	#heading {
+		font-size: .75em;
+	}
+
+	#menubar {
+	    display: none;
+	}
+
+	#container {
+		margin: 0px 0px 30px 0px;
+	}
+
 }

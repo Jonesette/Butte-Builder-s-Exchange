@@ -4,57 +4,44 @@ $(document).ready(function () {
 	$("#Member").load('Member.html');
 	$("#Contact").load('Contact.html');
 
-	$('#Member-button').click(function(){
-
-		$('#home').hide();
-		$('#info').hide();
-		$('#Member').show();
-		$('#Contact').hide();
-	});
-
-	$('#home-button').click(function(){
-
+	$('.home-button').click(function(){
 		$('#home').show();
 		$('#info').hide();
 		$('#Member').hide();
 		$('#Contact').hide();
+		$("#nav-mobile.expanded").removeClass("expanded").slideUp(250);
 	});
 
-	$('#info-button').click(function(){
+	$('.info-button').click(function(){
 		$('#home').hide();
 		$('#info').show();
 		$('#Member').hide();
 		$('#Contact').hide();
+		$("#nav-mobile.expanded").removeClass("expanded").slideUp(250);
 	});
 
-	$('#MontanaBids-button').click(function(){
+	$('.Member-button').click(function(){
 		$('#home').hide();
 		$('#info').hide();
-		$('#Member').hide();
+		$('#Member').show();
 		$('#Contact').hide();
+		$("#nav-mobile.expanded").removeClass("expanded").slideUp(250);
 	});
 
-	$('#PrivatePR-button').click(function(){
-		$('#home').hide();
-		$('#info').hide();
-		$('#Member').hide();
-		$('#Contact').hide();
-	});
-
-	$('#Contact-button').click(function(){
+	$('.Contact-button').click(function(){
 		$('#home').hide();
 		$('#info').hide();
 		$('#Member').hide();
 		$('#Contact').show();
+		$("#nav-mobile.expanded").removeClass("expanded").slideUp(250);
 	});
 
-	$(".menu").mouseover(function() {
-		$(this).attr('id', 'hover');
-	});
-
-		$(".menu").mouseleave(function() {
-		$(this).removeAttr('id', 'hover');
-	});
-
+    $("#nav-trigger").click(function(){
+        if ($("#nav-mobile").hasClass("expanded")) {
+            $("#nav-mobile.expanded").removeClass("expanded").slideUp(250);
+        } else {
+            $("#nav-mobile").addClass("expanded").slideDown(250);
+        }
+    });
 });
 

@@ -1,20 +1,20 @@
 <form action="http://www.ipage.com/scripts/formemail.bml">
 	<input type="hidden" name="my-email" value="sjones@jjaviation.com">
-	<div>
-		First and Last Name:
+	<div class="form-field">
+		<p>First and Last Name:</p>
 		<input type="text" name="fullname" size="25">
 	</div>
-	<div>
-		E-mail Address:
+	<div class="form-field">
+		<p>E-mail Address:</p>
 		<input type="text" name="email" size="25">
 	</div>
-	<div>
-		Phone Number:
+	<div class="form-field">
+		<p>Phone Number:</p>
 		<input type="text" name="phone" size="25">
 	</div>
-	<div>
-		Message:
-		<input type="text" name="message" size="25">
+	<div class="form-field">
+		<p>Message:</p>
+		<textarea class="message" rows=4 cols=50 name=content></textarea>
 	</div>
 	<input type="hidden" name="subject" value="E-mail from %%full name%%">
 	<input type="hidden" name="required" value="field1, field2, field3, field4">

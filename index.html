@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Butte Builder's Exchanges</title>
+	<title>Butte Builder's Exchange</title>
 	<link rel="stylesheet" href="reset.css">
 	<link rel="stylesheet" href="main.css">
 	<script src="jquery-1.11.0.min.js"></script>
@@ -10,31 +10,56 @@
 </head>
 <body>
 <div id="title">
-	<div id="logo"><img src="images/logo.jpg" alt="Butte Builder's"></div>
+	<div id="logo">
+		<img src="images/logo.jpg" alt="Butte Builder's">
+		<div id="nav-trigger">
+			<span>Menu</span>
+		</div>
+		
+	</div>
 	<div id="name">
-		<p class="heading">Butte Builder's Exchange</p>
+		<p id="heading">Butte Builder's Exchange</p>
 	</div>
 </div>
-<div id="menubar">
-	<div class="menu" id="home-button">Home</div>
-	<div class="menu" id="info-button">Info</div>
-	<div class="menu" id="BBE-button">
-		<a href="http://onlineplanservice.com" target="_blank">Bozeman Builder's Exchange Login</a>
-	</div>
-	<div class="menu" id="MontanaBids-button">
-		<a href="http://montanabid.com" target="_blank">Montana Bids</a>
-	</div>
-	<div class="menu" id="PrivatePR-button">
-		<a href="http://onlineplanservice.com/PP/index.aspx" target="_blank">Private Plan Room Login</a>
-	</div>
-	<div class="menu" id="Member-button">Become a Member</div>
-	<div class="menu" id="Contact-button">Contact Us</div>
-</div>
+<nav id="nav-mobile">
+	<ul>
+		<li class="menu home-button">Home</li>
+		<li class="menu info-button">Info</li>
+		<li class="menu BBE-button">
+			<a href="http://onlineplanservice.com" target="_blank">Bozeman Builder's Exchange Login</a>
+		</li>
+		<li class="menu MontanaBids-button">
+			<a href="http://montanabid.com" target="_blank">Montana Bids</a>
+		</li>
+		<li class="menu PrivatePR-button">
+			<a href="http://onlineplanservice.com/PP/index.aspx" target="_blank">Private Plan Room Login</a>
+		</li>
+		<li class="menu Member-button">Become a Member</li>
+		<li class="menu Contact-button">Contact Us</li>
+	</ul>
+</nav>
+<nav id="menubar">
+	<ul>
+		<li class="menu home-button">Home</li>
+		<li class="menu info-button">Info</li>
+		<li class="menu BBE-button">
+			<a href="http://onlineplanservice.com" target="_blank">Bozeman Builder's Exchange Login</a>
+		</li>
+		<li class="menu MontanaBids-button">
+			<a href="http://montanabid.com" target="_blank">Montana Bids</a>
+		</li>
+		<li class="menu PrivatePR-button">
+			<a href="http://onlineplanservice.com/PP/index.aspx" target="_blank">Private Plan Room Login</a>
+		</li>
+		<li class="menu Member-button">Become a Member</li>
+		<li class="menu Contact-button">Contact Us</li>
+	</ul>
+</nav>
+
 <div id="container">
 	<div id="background"></div>
 	<div class="context" id="home"></div>
 	<div class="context" id="info"></div>
-	<div class="context" id="PrivatePR"></div>
 	<div class="context" id="Member"></div>
 	<div class="context" id="Contact"></div>
 </div>
